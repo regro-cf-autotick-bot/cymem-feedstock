@@ -6,11 +6,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/c/cymem/cymem-{{ version }}.tar.gz
+  url: https://files.pythonhosted.org/packages/source/c/cymem/cymem-{{ version }}.tar.gz
   sha256: {{ sha256sum }}
 
 build:
-  number: 1
+  number: 2
   script: {{ PYTHON }} -m pip install --no-deps --ignore-installed .
 
 requirements:

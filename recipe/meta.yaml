@@ -1,16 +1,16 @@
-{% set version = "2.0.13" %}
-{% set sha256sum = "1c91a92ae8c7104275ac26bd4d29b08ccd3e7faff5893d3858cb6fadf1bc1588" %}
+{% set version = "2.0.16" %}
+{% set sha256sum = "a1f2f2bf8632f152867967a86dd58014064aa09bf9cb17ae297f4c33a8fc8b6e" %}
 
 package:
   name: cymem
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/c/cymem/cymem-{{ version }}.tar.gz
+  url: https://files.pythonhosted.org/packages/source/c/cymem/cymem-{{ version }}.tar.gz
   sha256: {{ sha256sum }}
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install --no-deps --ignore-installed .
 
 requirements:
